@@ -1,0 +1,10 @@
+
+flask
+flask_sqlalchemy
+flask_bcrypt
+flask_jwt_extended
+tensorflow
+ultralytics
+opencv-python
+pytesseract
+python-dotenv

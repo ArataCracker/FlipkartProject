@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Result{% endblock %}
+
+{% block content %}
+<h1>Model Result</h1>
+{% if result %}
+    <pre>{{ result }}</pre>
+{% else %}
+    <p>No result found.</p>
+{% endif %}
+<a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+{% endblock %}

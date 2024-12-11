@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h1>Welcome, {{ session['username'] }}!</h1>
+<ul>
+    <li><a href="{{ url_for('models', model_name='freshness') }}">Freshness Detection</a></li>
+    <li><a href="{{ url_for('models', model_name='object_detection') }}">Object Detection</a></li>
+    <li><a href="{{ url_for('models', model_name='expiry_date') }}">Expiry Date Detection</a></li>
+</ul>
+{% endblock %}

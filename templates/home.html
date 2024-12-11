@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Upload an Image</h2>
+<form action="/process_image" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image">
+    <select name="model">
+        <option value="brand_item_model">Brand Item Model</option>
+        <option value="freshness_model">Freshness Model</option>
+        <option value="expiry_date_model">Expiry Date Detection</option>
+    </select>
+    <button type="submit">Process</button>
+</form>
+{% endblock %}
